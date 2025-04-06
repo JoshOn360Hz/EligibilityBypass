@@ -3,7 +3,7 @@ Bypassing apples eligibility system in order to enable alternate app marketplace
 
 ## Steps 
 - 1 Jailbreak device and install Filza File manager
-- 2 Delete eligibility.plist in /var/db/os_eligibility
-- 3 Delete config.plist in /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_OSEligibility/ purpose_auto/c55a421c053e10233e5bfc15c42fa6230e5639a9.asset/AssetData
+- 2 Delete eligibility.plist in /var/db/os_eligibility then add the new eligibility.plist
+- 3 Delete config.plist in /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_OSEligibility/ purpose_auto/c55a421c053e10233e5bfc15c42fa6230e5639a9.asset/AssetData and add the new one , you may have to replace "GB" with your country code
 - 4 install an alternate app store such as altstore or EGS
 - Done :) 
