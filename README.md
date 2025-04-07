@@ -1,9 +1,35 @@
 # EligibilityBypass
-Bypassing apples eligibility system in order to enable alternate app marketplaces on jailbroken devices outside of the EU
 
-## Steps 
-- 1 Jailbreak device and install Filza File manager
-- 2 Delete eligibility.plist in /var/db/os_eligibility then add the new eligibility.plist
-- 3 Delete config.plist in /private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_OSEligibility/ purpose_auto/c55a421c053e10233e5bfc15c42fa6230e5639a9.asset/AssetData and add the new one , you may have to replace "GB" with your country code
-- 4 install an alternate app store such as altstore or EGS
-- Done :) 
+This project documents the differences between eligibility-related system files on EU and non-EU iOS devices.
+
+⚠️ **Disclaimer:**
+- Modifying system files may violate Apple's Terms of Service and could be illegal in some jurisdictions.
+- This project is intended for educational and research purposes only.
+- No instructions for modifying, deleting, or bypassing system protections are provided here.
+- No files from Apple are distributed or hosted in this repository.
+
+---
+
+## Observed Files and Locations
+
+- `/var/db/os_eligibility/eligibility.plist`
+- `/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_OSEligibility/purpose_auto/[unique_id]/AssetData/config.plist`
+
+These files appear to influence device eligibility settings for regional features, such as alternate app marketplaces.
+
+---
+
+## Notes
+
+- Differences between the `eligibility.plist` and `config.plist` files have been observed between EU and non-EU devices.
+- On jailbroken devices, file management tools like **Filza** are commonly used to view and explore system files.
+- Alterations to these files on a jailbroken device may affect app marketplace availability.
+- No instructions are provided on how to modify or replace these files. Users seeking to explore this further should refer to publicly available jailbreak and iOS development communities.
+
+---
+
+## Important
+
+This repository is for **educational and informational purposes only**.  
+You assume all risk and responsibility if you choose to modify your device outside of Apple's intended use.
+
