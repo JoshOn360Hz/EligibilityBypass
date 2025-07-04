@@ -5,8 +5,6 @@ This project documents the differences between eligibility-related system files 
 ⚠️ **Disclaimer:**
 - Modifying system files may violate Apple's Terms of Service and could be illegal in some jurisdictions.
 - This project is intended for educational and research purposes only.
-- No instructions for modifying, deleting, or bypassing system protections are provided here.
-- No files from Apple are distributed or hosted in this repository.
 
 ---
 
@@ -15,14 +13,14 @@ This project documents the differences between eligibility-related system files 
 - `/var/db/os_eligibility/eligibility.plist`
 - `/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_OSEligibility/purpose_auto/[unique_id]/AssetData/config.plist`
 
-These files appear to influence device eligibility settings for regional features, such as alternate app marketplaces.
+These files influence device eligibility settings for regional features, such as alternate app marketplaces.
 
 ---
 
 ## Notes
 
 - Differences between the `eligibility.plist` and `config.plist` files have been observed between EU and non-EU devices.
-- On jailbroken devices, file management tools like **Filza** are commonly used to view and explore system files.
+- On jailbroken devices, file management tools like **Filza** are commonly used to view and explore system files if the files are replaced with the files on this repo region restricted features wil be enabled.
 - Alterations to these files on a jailbroken device may affect app marketplace availability.
 - No instructions are provided on how to modify or replace these files. Users seeking to explore this further should refer to publicly available jailbreak and iOS development communities.
 
